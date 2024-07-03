@@ -1,0 +1,13 @@
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\bin\Debug\net8.0\SuperRate.Domain.deps.json
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\bin\Debug\net8.0\SuperRate.Domain.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\bin\Debug\net8.0\SuperRate.Domain.pdb
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.csproj.AssemblyReference.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.AssemblyInfoInputs.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.AssemblyInfo.cs
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.csproj.CoreCompileInputs.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.sourcelink.json
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\refint\SuperRate.Domain.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\SuperRate.Domain.pdb
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Domain\obj\Debug\net8.0\ref\SuperRate.Domain.dll

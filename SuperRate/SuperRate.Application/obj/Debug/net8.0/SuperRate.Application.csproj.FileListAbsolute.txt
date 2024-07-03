@@ -1,0 +1,16 @@
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\bin\Debug\net8.0\SuperRate.Application.deps.json
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\bin\Debug\net8.0\SuperRate.Application.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\bin\Debug\net8.0\SuperRate.Application.pdb
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\bin\Debug\net8.0\SuperRate.Domain.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\bin\Debug\net8.0\SuperRate.Domain.pdb
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.csproj.AssemblyReference.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.AssemblyInfoInputs.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.AssemblyInfo.cs
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.csproj.CoreCompileInputs.cache
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.sourcelink.json
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRat.5777C999.Up2Date
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\refint\SuperRate.Application.dll
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\SuperRate.Application.pdb
+D:\RiderProjects\SuperRate\SuperRate\SuperRate.Application\obj\Debug\net8.0\ref\SuperRate.Application.dll

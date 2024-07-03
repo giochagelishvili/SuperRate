@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SuperRate.API.props" />
+</Project>

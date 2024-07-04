@@ -155,6 +155,84 @@ namespace SuperRate.Persistence.Migrations
                     b.ToTable("UserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("SuperRate.Domain.IBans.IBan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("IBanNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("IBans", (string)null);
+                });
+
+            modelBuilder.Entity("SuperRate.Domain.Orders.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("BuyingAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("BuyingCurrency")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("IBanId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("SellingAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("SellingCurrency")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TaxAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("TaxCurrency")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IBanId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders", (string)null);
+                });
+
             modelBuilder.Entity("SuperRate.Domain.Users.User", b =>
                 {
                     b.Property<int>("Id")
@@ -165,10 +243,6 @@ namespace SuperRate.Persistence.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
-
-                    b.Property<string>("CompanyName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -286,6 +360,48 @@ namespace SuperRate.Persistence.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("SuperRate.Domain.IBans.IBan", b =>
+                {
+                    b.HasOne("SuperRate.Domain.Users.User", "User")
+                        .WithMany("IBans")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SuperRate.Domain.Orders.Order", b =>
+                {
+                    b.HasOne("SuperRate.Domain.IBans.IBan", "IBanNumber")
+                        .WithMany("Orders")
+                        .HasForeignKey("IBanId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("SuperRate.Domain.Users.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("IBanNumber");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("SuperRate.Domain.IBans.IBan", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("SuperRate.Domain.Users.User", b =>
+                {
+                    b.Navigation("IBans");
+
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

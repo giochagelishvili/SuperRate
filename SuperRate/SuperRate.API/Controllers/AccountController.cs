@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SuperRate.API.Infrastructure.Authorization;
 using SuperRate.Application.Accounts.Interfaces;
@@ -19,6 +20,13 @@ namespace SuperRate.API.Controllers
             _accountService = accountService;
             _userService = userService;
             _config = config;
+        }
+
+        [Authorize]
+        [HttpGet]
+        public string Get()
+        {
+            return "it works";
         }
 
         [HttpPost("login")]

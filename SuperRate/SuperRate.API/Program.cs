@@ -14,6 +14,8 @@ public class Program
 
         builder.Services.AddTokenAuthorization(builder.Configuration);
 
+        builder.Services.AddCustomValidators();
+
         builder.Services.AddControllers();
 
         builder.Services.UseSwaggerConfiguration();
@@ -30,7 +32,6 @@ public class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
 
         app.MapControllers();
 

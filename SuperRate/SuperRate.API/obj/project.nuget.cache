@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "SbzjSffxSvOVZzRKVyft0CbZmoiOw9rcOXwEauoU8Y/R8sxS8Rci4bhFhgAeVQ8v19ur0awzXKZEfWF/kp24ow==",
+  "dgSpecHash": "DFztOcXiPp0U81lBBEr2KckB5Tfxpjx4ICJY8OnW41WoXCYOywsg2/YKWD9MKFhhFC938odnraqG/X6rJJCoTg==",
   "success": true,
   "projectFilePath": "D:\\RiderProjects\\SuperRate\\SuperRate\\SuperRate.API\\SuperRate.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

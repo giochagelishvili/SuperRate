@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SuperRate.Application.Orders.Interfaces;
 using SuperRate.Application.Orders.Requests;
 using SuperRate.Application.Orders.Responses;
+using SuperRate.Domain.Enums;
 
 namespace SuperRate.API.Controllers
 {

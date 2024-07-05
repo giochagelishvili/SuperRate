@@ -11,12 +11,15 @@ using SuperRate.Application.Accounts;
 using SuperRate.Application.Accounts.Interfaces;
 using SuperRate.Application.IBans;
 using SuperRate.Application.IBans.Interfaces;
+using SuperRate.Application.MatchingOrders;
+using SuperRate.Application.MatchingOrders.Interfaces;
 using SuperRate.Application.Orders;
 using SuperRate.Application.Orders.Interfaces;
 using SuperRate.Application.Users;
 using SuperRate.Application.Users.Interfaces;
 using SuperRate.Domain.Users;
 using SuperRate.Infrastructure.IBans;
+using SuperRate.Infrastructure.MatchingOrders;
 using SuperRate.Infrastructure.Orders;
 using SuperRate.Persistence.Context;
 
@@ -30,9 +33,23 @@ public static class ServiceExtensions
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IIBanService, IBanService>();
         services.AddScoped<IOrderService, OrderService>();
+        services.AddScoped<IMatchingOrderService, MatchingOrderService>();
 
         services.AddScoped<IIBanRepository, IBanRepository>();
         services.AddScoped<IOrderRepository, OrderRepository>();
+        services.AddScoped<IMatchingOrderRepository, MatchingOrderRepository>();
+    }
+
+    public static void UseConfiguredCors(this IServiceCollection services)
+    {
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowSpecificOrigin",
+                corsPolicyBuilder =>
+                    corsPolicyBuilder.WithOrigins("http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
+        });
     }
 
     public static void AddDbContextAndIdentity(this IServiceCollection services, IConfiguration configuration,

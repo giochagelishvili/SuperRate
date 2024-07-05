@@ -28,17 +28,13 @@ namespace SuperRate.API.Controllers
         }
 
         [HttpPost("addIban")]
-        public async Task CreateAsync(string iBanNumber, CancellationToken cancellationToken)
+        public async Task CreateAsync(IBanRequestPostModel ibanRequestPostModel, CancellationToken cancellationToken)
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
 
-            var requestPostModel = new IBanRequestPostModel
-            {
-                IBanNumber = iBanNumber,
-                UserId = userId
-            };
+            ibanRequestPostModel.UserId = userId;
 
-            await _iBanService.CreateAsync(requestPostModel, cancellationToken);
+            await _iBanService.CreateAsync(ibanRequestPostModel, cancellationToken);
         }
     }
 }

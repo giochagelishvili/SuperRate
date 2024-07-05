@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SuperRate.API.Infrastructure.Authorization;
 using SuperRate.Application.Accounts.Interfaces;
 using SuperRate.Application.Accounts.Requests;
@@ -36,7 +37,9 @@ namespace SuperRate.API.Controllers
 
             var user = await _userService.GetUserByNameAsync(loginRequestModel.UserName);
 
-            return JwtHelper.GenerateToken(user, _config);
+            var token = JwtHelper.GenerateToken(user, _config);
+
+            return JsonConvert.SerializeObject(token);
         }
 
         [HttpPost("register")]

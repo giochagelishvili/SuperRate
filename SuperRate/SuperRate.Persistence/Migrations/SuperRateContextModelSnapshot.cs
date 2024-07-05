@@ -183,6 +183,25 @@ namespace SuperRate.Persistence.Migrations
                     b.ToTable("IBans", (string)null);
                 });
 
+            modelBuilder.Entity("SuperRate.Domain.MatchingOrders.MatchingOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("FirstOrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SecondOrderId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MatchingOrders", (string)null);
+                });
+
             modelBuilder.Entity("SuperRate.Domain.Orders.Order", b =>
                 {
                     b.Property<int>("Id")

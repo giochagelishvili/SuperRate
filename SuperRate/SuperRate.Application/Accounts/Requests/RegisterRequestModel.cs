@@ -8,4 +8,5 @@ public class RegisterRequestModel
     public string PhoneNumber { get; set; } = default!;
     public string Password { get; set; } = default!;
     public string ConfirmPassword { get; set; } = default!;
+    public bool AgreeToTerms { get; set; }
 }

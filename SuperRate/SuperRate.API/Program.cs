@@ -16,6 +16,8 @@ public class Program
 
         builder.Services.AddCustomValidators();
 
+        builder.Services.UseConfiguredCors();
+
         builder.Services.AddControllers();
 
         builder.Services.UseSwaggerConfiguration();
@@ -30,6 +32,8 @@ public class Program
         }
 
         app.UseHttpsRedirection();
+
+        app.UseCors("AllowSpecificOrigin");
 
         app.UseAuthorization();
 

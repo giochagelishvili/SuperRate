@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SuperRate.Domain.BaseEntity;
 using SuperRate.Domain.IBans;
+using SuperRate.Domain.MatchingOrders;
 using SuperRate.Domain.Orders;
 using SuperRate.Domain.Users;
 
@@ -27,6 +28,7 @@ public class SuperRateContext : IdentityDbContext<User, IdentityRole<int>, int>
         modelBuilder.Entity<IdentityRoleClaim<int>>().ToTable("RoleClaims");
         modelBuilder.Entity<Order>().ToTable("Orders");
         modelBuilder.Entity<IBan>().ToTable("IBans");
+        modelBuilder.Entity<MatchingOrder>().ToTable("MatchingOrders");
     }
 
     public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

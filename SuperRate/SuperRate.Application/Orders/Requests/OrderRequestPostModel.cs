@@ -9,7 +9,7 @@ public class OrderRequestPostModel
     public decimal BuyingAmount { get; set; }
     public decimal SellingAmount { get; set; }
     public Currency TaxCurrency { get; set; }
-    public Currency TaxAmount { get; set; }
+    public decimal TaxAmount { get; set; }
     public int IBanId { get; set; }
     public int UserId { get; set; }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperRate.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc0d7ad670b0d2f400e8a8578bb3dbff5b2ee0e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23f26a336b2611b63234401959191b75978acdec")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperRate.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperRate.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

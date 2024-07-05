@@ -1,4 +1,5 @@
 using SuperRate.API.Infrastructure.Extensions;
+using SuperRate.API.Infrastructure.Middlewares;
 
 namespace SuperRate.API;
 
@@ -24,6 +25,9 @@ public class Program
 
         var app = builder.Build();
 
+        app.UseMiddleware<CultureMiddleware>();
+        //app.UseMiddleware<CustomExceptionHandlerMiddleware>();
+
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
@@ -31,9 +35,9 @@ public class Program
             app.UseSwaggerUI();
         }
 
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
 
-        app.UseCors("AllowSpecificOrigin");
+        app.UseCors("AllowAllOrigins");
 
         app.UseAuthorization();
 

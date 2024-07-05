@@ -2,7 +2,7 @@
 
 public class InvalidPasswordException : Exception
 {
-    public readonly string Code = "InvalidPassword";
+    public static readonly string Code = "InvalidPassword";
     
     public InvalidPasswordException(string message = "Invalid password.") : base(message)
     {

@@ -69,6 +69,24 @@ namespace SuperRate.API.Localizations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred while registering, please try again..
+        /// </summary>
+        internal static string CouldNotRegister {
+            get {
+                return ResourceManager.GetString("CouldNotRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email already exists..
+        /// </summary>
+        internal static string EmailAlreadyExists {
+            get {
+                return ResourceManager.GetString("EmailAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Email invalid, please try again..
         /// </summary>
         internal static string EmailInvalidFormat {
@@ -87,6 +105,15 @@ namespace SuperRate.API.Localizations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to IBan not found..
+        /// </summary>
+        internal static string IBanNotFound {
+            get {
+                return ResourceManager.GetString("IBanNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Identification number must contain digits only (minimum 6)..
         /// </summary>
         internal static string IdentificationNumberInvalidFormat {
@@ -101,6 +128,24 @@ namespace SuperRate.API.Localizations {
         internal static string IdentificationNumberRequired {
             get {
                 return ResourceManager.GetString("IdentificationNumberRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid password..
+        /// </summary>
+        internal static string InvalidPassword {
+            get {
+                return ResourceManager.GetString("InvalidPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Order not found..
+        /// </summary>
+        internal static string OrderNotFound {
+            get {
+                return ResourceManager.GetString("OrderNotFound", resourceCulture);
             }
         }
         
@@ -150,6 +195,24 @@ namespace SuperRate.API.Localizations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unhandled error occurred, please try again later..
+        /// </summary>
+        internal static string UnhandledErrorOccurred {
+            get {
+                return ResourceManager.GetString("UnhandledErrorOccurred", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username already exists..
+        /// </summary>
+        internal static string UsernameAlreadyExists {
+            get {
+                return ResourceManager.GetString("UsernameAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Username must be at least 4, maximum 20 characters long and should only contain letters..
         /// </summary>
         internal static string UsernameInvalidFormat {
@@ -164,6 +227,15 @@ namespace SuperRate.API.Localizations {
         internal static string UsernameRequired {
             get {
                 return ResourceManager.GetString("UsernameRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User not found..
+        /// </summary>
+        internal static string UserNotFound {
+            get {
+                return ResourceManager.GetString("UserNotFound", resourceCulture);
             }
         }
     }

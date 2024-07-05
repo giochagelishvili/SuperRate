@@ -44,9 +44,9 @@ public static class ServiceExtensions
     {
         services.AddCors(options =>
         {
-            options.AddPolicy("AllowSpecificOrigin",
+            options.AddPolicy("AllowAllOrigins",
                 corsPolicyBuilder =>
-                    corsPolicyBuilder.WithOrigins("http://localhost:3000")
+                    corsPolicyBuilder.AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod());
         });

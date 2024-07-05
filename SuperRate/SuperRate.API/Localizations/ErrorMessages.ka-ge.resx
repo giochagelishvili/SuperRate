@@ -47,4 +47,28 @@
     <data name="PasswordDoesNotMatch" xml:space="preserve">
         <value>პაროლები არ ემთხვევა, გთხოვთ სცადეთ ხელახლა.</value>
     </data>
+    <data name="UnhandledErrorOccurred" xml:space="preserve">
+        <value>დაფიქსირდა გაუთვალისწინებელი შეცდომა, გთხოვთ სცადეთ მოგვიანებით.</value>
+    </data>
+    <data name="UserNotFound" xml:space="preserve">
+        <value>მომხმარებელი ვერ მოიძებნა.</value>
+    </data>
+    <data name="OrderNotFound" xml:space="preserve">
+        <value>ორდერი ვერ მოიძებნა.</value>
+    </data>
+    <data name="IBanNotFound" xml:space="preserve">
+        <value>ანგარიშის ნომერი ვერ მოიძებნა.</value>
+    </data>
+    <data name="EmailAlreadyExists" xml:space="preserve">
+        <value>ელ-ფოსტა უკვე რეგისტრირებულია.</value>
+    </data>
+    <data name="UsernameAlreadyExists" xml:space="preserve">
+        <value>მომხმარებლის სახელი უკვე რეგისტრირებულია.</value>
+    </data>
+    <data name="CouldNotRegister" xml:space="preserve">
+        <value>მოხდა შეცდომა რეგისტრაციის დროს, გთხოვთ სცადეთ ხელახლა.</value>
+    </data>
+    <data name="InvalidPassword" xml:space="preserve">
+        <value>პაროლი არასწორია.</value>
+    </data>
 </root>

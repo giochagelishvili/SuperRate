@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperRate.API")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23f26a336b2611b63234401959191b75978acdec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21273dda79431452000a5a13b57cbce71735b2b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperRate.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperRate.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
